@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          text-align: center;
+          background-image: url("./wall.bmp");
+        }
+        
+        .map {
+          height: auto;
+          width: 50%;
+          margin: 20px;
+          padding: 10px;
+          position: relative;
+          display: inline-block;
+          text-align: center;
+        }
+        
+        .map img {
+          max-width:100%;
+          display: block;
+        }
+        
+        .box {
+          width:30%;
+          height:35%;
+          background-image:   url(./bubble.png);
+          background-position: top center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          position: absolute;
+        }
+        
+        #pin-1 {
+          top:5%;
+          left:3%;
+        }
+        
+        .pin-text {
+          padding: 20% 12%;
+          text-align: center;
+          width: 65%;
+          max-height: 150px;
+          position: absolute;
+          transform:translateY(-10%);
+          white-space:nowrap;
+          overflow: hidden;
+        }
+        
+        .pin-text p {
+            display: block-inline;
+            white-space:initial;
+            color:black;
+            font-weight: 3px;
+            font-size: 16px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="map">
+      <img  src="http://www.factsbyjane.com/jane.jpg" alt="" />
+      <div id="pin-1" class="box">
+        <div class="pin-text">
+          <p>Little tummy expand to hold pressure</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
